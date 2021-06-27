@@ -6,7 +6,8 @@ Authors: Pranay Asai (UoU) & Robert Podgorney (INL)<br>
 Edited by: Pranay Asai<br>
 Date: 06/26/2021<br>
 <br>
-It allows your to evaluate fluid flow distribution in a multi-fractured doublet (EGS) Enhanced Geothermal System model.
+The model allows to evaluate fluid flow distribution in a multi-fractured doublet Enhanced Geothermal System (EGS).
+Heat extraction from an enhanced geothermal system seems simple but is a complicated process. The EGS usually consists of two wells spaced sufficiently apart and connected by several flow paths or fractures. To ensure the system is operated at its highest potential, all the fractures must be utilized efficiently. But this poses a challenge as the fluid always chooses the path of least resistance which leads to uneven flow distribution in all the fractures. This study focuses on the key parameters that would optimize the well designs, allowing to develop a system with the least number of moving parts installed underground to give the desired flow distribution. An analytical model is developed based the Kirchhoff's voltage law to calculate the pressure drops between any two points. An initial flowrate is fed into the model, and depending on the flow rates and conduit size, the model uses different fluid flow and frictional loss equations to calculate the pressure drop at each node. Then the model calculates the new flowrate by solving the set if equations implicitly, for the next timestep. This process is continued until convergence is achieved.
 
 <H2>Rules/Assumptions:</H2>
 1. Fluid flows from high pressure zone to low pressure zone.<br>
